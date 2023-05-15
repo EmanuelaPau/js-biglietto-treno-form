@@ -1,12 +1,3 @@
-// Scrivere un programma che chieda all’utente:
-// Il numero di chilometri da percorrere
-// Età del passeggero.
-// Sulla base di queste informazioni dovrà calcolare il prezzo totale del biglietto di viaggio, secondo le seguenti regole:
-// il prezzo del biglietto è definito in base ai km(0.233 € al km)
-// va applicato uno sconto del 19.4 % per i minorenni
-// va applicato uno sconto del 37.7 % per gli over 65.
-
-
 // Add const age and kilometers
 let kilometers;
 let age;
@@ -15,10 +6,10 @@ let age;
 let discountedTicket;
 
 // Add button
-let subimitButton = document.getElementById("my_subimit-button")
+let submitButton = document.getElementById("my_submit-button")
 
 // Add button click behavior 
-subimitButton.addEventListener('click', function () {
+submitButton.addEventListener('click', function () {
     // Add value to kilometers
     kilometers = document.getElementById("kilometers");
 
@@ -30,6 +21,18 @@ subimitButton.addEventListener('click', function () {
 
     age = parseInt(age.value);
     console.log("Questa è la tua età: " + age);
+
+    // Add data control
+    if (isNaN(age) || isNaN(kilometers)) {
+        console.log("C'è un errore nella compilazione")
+        throw new Error("Datas not written in numbers!");
+    }
+
+    // Add age resctions
+    if (age < 0 || age > 130) {
+        console.log("C'è un errore nella compilazione dell'età")
+        throw new Error("Wrong Age!");
+    }
 
     // Calculate train ticket price 
     let ticketPrice = kilometers * 0.233;
