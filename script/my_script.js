@@ -20,6 +20,9 @@ let warningTxt = document.getElementById("my_warning")
 
 // Add button click behavior 
 submitButton.addEventListener('click', function () {
+    // Reset error message 
+    warningTxt.classList.add("d-none");
+
     // Add value to kilometers
     kilometers = document.getElementById("kilometers");
 
