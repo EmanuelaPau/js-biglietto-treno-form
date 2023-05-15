@@ -19,5 +19,17 @@ kilometers = 1000;
 // age = 23; 
 // age = 91;
 // Calculate train ticket price 
-const ticketPrice = (kilometers - (kilometers * 0.233));
+const ticketPrice = kilometers * 0.233;
+console.log(ticketPrice);
+
+// Calculate discount
+// const discountedTicket;
+
+if (age < 18) {
+    ticketPrice = (ticketPrice - (ticketPrice * 0.194));
+    console.log(discountedTicket);
+} else if (age > 65) {
+    ticketPrice = (ticketPrice - (ticketPrice * 0.377));
+}
+
 console.log(ticketPrice);
