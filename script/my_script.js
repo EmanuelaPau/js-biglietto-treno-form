@@ -5,8 +5,16 @@ let age;
 // Add discount variable 
 let discountedTicket;
 
+// Add discount badge
+let discountBadge = document.getElementById("discount-badge");
+
+// Add price text
+let myPriceTxt = document.getElementById("price-message");
+// Add discount text
+let myDiscountTxt = document.getElementById("discount-message");
+
 // Add button
-let submitButton = document.getElementById("my_submit-button")
+let submitButton = document.getElementById("my_submit-button");
 
 // Add button click behavior 
 submitButton.addEventListener('click', function () {
@@ -41,14 +49,31 @@ submitButton.addEventListener('click', function () {
 
     // Calculate discount
     if (age < 18) {
-        ticketPrice = (ticketPrice - (ticketPrice * 0.194)).toFixed(2);;
+        ticketPrice = (ticketPrice - (ticketPrice * 0.194)).toFixed(2);
+        document.getElementById("discount-percentage").innerHTML = " 19,4%";
+
+        discountBadge.classList.remove("bg-primary");
+        discountBadge.classList.add("my_bg-color-orange");
+
+        myPriceTxt.classList.add("text-decoration-line-through");
+        myPriceTxt.classList.add("my_color-grey");
+
+        myDiscountTxt.classList.remove("d-none");
+
     } else if (age > 65) {
         ticketPrice = (ticketPrice - (ticketPrice * 0.377)).toFixed(2);
+        document.getElementById("discount-percentage").innerHTML = " 37,7%";
+
+        discountBadge.classList.remove("bg-primary");
+        discountBadge.classList.add("my_bg-color-green");
+
+        myPriceTxt.classList.add("text-decoration-line-through");
+        myPriceTxt.classList.add("my_color-grey");
+
+        myDiscountTxt.classList.remove("d-none");
     }
 
-    console.log("questo è il prezzo del tuo biglietto scontato: " + ticketPrice);
-
-    document.getElementById("kilometers-message").innerHTML = kilometers;
+    // document.getElementById("kilometers-message").innerHTML = kilometers;
     document.getElementById("my_kilometers").innerHTML = kilometers;
     document.getElementById("age-message").innerHTML = age;
     document.getElementById("discount-message").innerHTML = ticketPrice;

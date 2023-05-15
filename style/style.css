@@ -75,6 +75,10 @@ body {
     color: #596472;
 }
 
+.my_color-grey {
+    color: #c6c5c9;
+}
+
 .my_color-orange {
     color: #f16b52;
 }
@@ -89,4 +93,8 @@ body {
 
 .my_bg-color-orange {
     background-color: #f16b52;
+}
+
+.my_bg-color-green {
+    background-color: green;
 }
