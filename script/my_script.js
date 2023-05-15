@@ -37,7 +37,7 @@ submitButton.addEventListener('click', function () {
     // Calculate train ticket price 
     let ticketPrice = kilometers * 0.233;
     console.log("questo è il prezzo del tuo biglietto: " + ticketPrice);
-    document.getElementById("price-message").innerHTML += ticketPrice;
+    document.getElementById("price-message").innerHTML = ticketPrice;
 
     // Calculate discount
     if (age < 18) {
@@ -48,7 +48,7 @@ submitButton.addEventListener('click', function () {
 
     console.log("questo è il prezzo del tuo biglietto scontato: " + ticketPrice);
 
-    document.getElementById("kilometers-message").innerHTML += kilometers;
+    document.getElementById("kilometers-message").innerHTML = kilometers;
     document.getElementById("age-message").innerHTML += age;
     document.getElementById("discount-message").innerHTML += ticketPrice;
 }
