@@ -8,27 +8,26 @@
 
 
 // Add const age and kilometers
-// const kilometers = parseInt(document.getElementById("kilometers"));
-// console.log(kilometers);
-// const age = parseInt(document.getElementById("age"));
-// console.log(age);
+let kilometers = document.getElementById("kilometers");
+console.log(kilometers);
+let age = document.getElementById("age");
+console.log(age);
 
-// Test WILL BE DELETED 
-kilometers = 1000;
-// age = 16;
-// age = 23;
-age = 91;
-// Calculate train ticket price 
-const ticketPrice = kilometers * 0.233;
-console.log(ticketPrice);
-
-// Calculate discount
 let discountedTicket;
+// Add button
+let subimitButton = document.getElementById("my_subimit-button")
 
-if (age < 18) {
-    discountedTicket = (ticketPrice - (ticketPrice * 0.194));
-} else if (age > 65) {
-    discountedTicket = (ticketPrice - (ticketPrice * 0.377));
-}
+
+// // Calculate train ticket price 
+// const ticketPrice = kilometers * 0.233;
+// console.log(ticketPrice);
+
+// // Calculate discount
+
+// if (age < 18) {
+//     discountedTicket = (ticketPrice - (ticketPrice * 0.194));
+// } else if (age > 65) {
+//     discountedTicket = (ticketPrice - (ticketPrice * 0.377));
+// }
 
 console.log(discountedTicket);
