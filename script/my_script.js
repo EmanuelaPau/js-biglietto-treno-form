@@ -8,10 +8,8 @@
 
 
 // Add const age and kilometers
-let kilometers = document.getElementById("kilometers");
-console.log(kilometers);
-let age = document.getElementById("age");
-console.log(age);
+let kilometers;
+let age;
 
 // Add discount variable 
 let discountedTicket;
@@ -21,8 +19,15 @@ let subimitButton = document.getElementById("my_subimit-button")
 
 // Add button click behavior 
 subimitButton.addEventListener('click', function () {
+    kilometers = document.getElementById("kilometers");
+    console.log(kilometers);
+
     kilometers = parseInt(kilometers.value);
     console.log("questi sono i chilometri che percorri:" + kilometers);
+
+    age = document.getElementById("age");
+    console.log(age);
+
     age = parseInt(age.value);
     console.log("Questa è la tua età: " + age);
 
