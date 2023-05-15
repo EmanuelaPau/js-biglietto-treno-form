@@ -18,10 +18,11 @@ let discountedTicket;
 let subimitButton = document.getElementById("my_subimit-button")
 subimitButton.addEventListener('click', function () {
     alert("Hello! I am an alert box!!");
+    kilometers = parseInt(kilometers.value);
+    console.log(kilometers);
+    age = parseInt(age.value);
+    console.log(age);
 }
-    //     kilometers = parseInt(kilometers.value);
-
-    // age = parseInt(age.value);
 )
 
 // // Calculate train ticket price 
