@@ -17,24 +17,23 @@ let discountedTicket;
 // Add button
 let subimitButton = document.getElementById("my_subimit-button")
 subimitButton.addEventListener('click', function () {
-    alert("Hello! I am an alert box!!");
     kilometers = parseInt(kilometers.value);
-    console.log(kilometers);
+    console.log("questi sono i chilometri che percorri:" + kilometers);
     age = parseInt(age.value);
-    console.log(age);
+    console.log("Questa è la tua età: " + age);
+
+    // Calculate train ticket price 
+    const ticketPrice = kilometers * 0.233;
+    console.log("questo è il prezzo del tuo biglietto: " + ticketPrice);
+
+    // Calculate discount
+    if (age < 18) {
+        discountedTicket = (ticketPrice - (ticketPrice * 0.194)).toFixed(2);;
+    } else if (age > 65) {
+        discountedTicket = (ticketPrice - (ticketPrice * 0.377)).toFixed(2);
+    }
+
+    console.log("questo è il prezzo del tuo biglietto scontato: " + discountedTicket);
 }
 )
 
-// // Calculate train ticket price 
-// const ticketPrice = kilometers * 0.233;
-// console.log(ticketPrice);
-
-// // Calculate discount
-
-// if (age < 18) {
-//     discountedTicket = (ticketPrice - (ticketPrice * 0.194));
-// } else if (age > 65) {
-//     discountedTicket = (ticketPrice - (ticketPrice * 0.377));
-// }
-
-console.log(discountedTicket);
