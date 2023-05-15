@@ -42,7 +42,8 @@ submitButton.addEventListener('click', function () {
         throw new Error("Datas not written in numbers!");
     } else {
         // Reset error message 
-        warningTxt.classList.add("d-none");
+        warningTxt.classList.remove("d-block")
+        warningTxt.classList.add("d-none")
     }
 
     // Add age resctions
@@ -54,7 +55,8 @@ submitButton.addEventListener('click', function () {
         throw new Error("Datas not written in numbers!");
     } else {
         // Reset error message 
-        warningTxt.classList.add("d-none");
+        warningTxt.classList.remove("d-block")
+        warningTxt.classList.add("d-none")
     }
 
     // Calculate train ticket price 
