@@ -16,6 +16,8 @@ let myDiscountTxt = document.getElementById("discount-message");
 // Add button
 let submitButton = document.getElementById("my_submit-button");
 
+let warningTxt = document.getElementById("my_warning")
+
 // Add button click behavior 
 submitButton.addEventListener('click', function () {
     // Add value to kilometers
@@ -32,14 +34,20 @@ submitButton.addEventListener('click', function () {
 
     // Add data control
     if (isNaN(age) || isNaN(kilometers)) {
-        console.log("C'è un errore nella compilazione")
+        console.log("C'è un errore nella compilazione");
+        // Warning message 
+        warningTxt.classList.remove("d-none");
+        document.getElementById("my_warning").innerHTML = "C'è un errore nella compilazione, prego riscrivere in numeri";
         throw new Error("Datas not written in numbers!");
     }
 
     // Add age resctions
     if (age < 0 || age > 130) {
         console.log("C'è un errore nella compilazione dell'età")
-        throw new Error("Wrong Age!");
+        // Warning message
+        warningTxt.classList.remove("d-none");
+        document.getElementById("my_warning").innerHTML = "C'è un errore nella compilazione dell'età, prego riscrivere";
+        throw new Error("Datas not written in numbers!");
     }
 
     // Calculate train ticket price 
