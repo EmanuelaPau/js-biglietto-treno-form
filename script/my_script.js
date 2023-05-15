@@ -20,8 +20,6 @@ let warningTxt = document.getElementById("my_warning")
 
 // Add button click behavior 
 submitButton.addEventListener('click', function () {
-    // Reset error message 
-    warningTxt.classList.add("d-none");
 
     // Add value to kilometers
     kilometers = document.getElementById("kilometers");
@@ -42,6 +40,9 @@ submitButton.addEventListener('click', function () {
         warningTxt.classList.remove("d-none");
         document.getElementById("my_warning").innerHTML = "C'è un errore nella compilazione, prego riscrivere in numeri";
         throw new Error("Datas not written in numbers!");
+    } else {
+        // Reset error message 
+        warningTxt.classList.add("d-none");
     }
 
     // Add age resctions
@@ -51,6 +52,9 @@ submitButton.addEventListener('click', function () {
         warningTxt.classList.remove("d-none");
         document.getElementById("my_warning").innerHTML = "C'è un errore nella compilazione dell'età, prego riscrivere";
         throw new Error("Datas not written in numbers!");
+    } else {
+        // Reset error message 
+        warningTxt.classList.add("d-none");
     }
 
     // Calculate train ticket price 
