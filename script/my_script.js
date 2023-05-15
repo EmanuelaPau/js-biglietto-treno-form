@@ -37,26 +37,26 @@ submitButton.addEventListener('click', function () {
     if (isNaN(age) || isNaN(kilometers)) {
         console.log("C'è un errore nella compilazione");
         // Warning message 
-        warningTxt.classList.remove("d-none");
+        warningTxt.classList.remove("invisible");
         document.getElementById("my_warning").innerHTML = "C'è un errore nella compilazione, prego riscrivere in numeri";
         throw new Error("Datas not written in numbers!");
     } else {
         // Reset error message 
-        warningTxt.classList.remove("d-block")
-        warningTxt.classList.add("d-none")
+        warningTxt.classList.remove("visible")
+        warningTxt.classList.add("invisible")
     }
 
     // Add age resctions
     if (age < 0 || age > 130) {
         console.log("C'è un errore nella compilazione dell'età")
         // Warning message
-        warningTxt.classList.remove("d-none");
+        warningTxt.classList.remove("invisible");
         document.getElementById("my_warning").innerHTML = "C'è un errore nella compilazione dell'età, prego riscrivere";
         throw new Error("Datas not written in numbers!");
     } else {
         // Reset error message 
-        warningTxt.classList.remove("d-block")
-        warningTxt.classList.add("d-none")
+        warningTxt.classList.remove("visible")
+        warningTxt.classList.add("invisible")
     }
 
     // Calculate train ticket price 
