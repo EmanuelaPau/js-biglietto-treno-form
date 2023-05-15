@@ -1,0 +1,92 @@
+body {
+    background-color: rgb(94, 94, 94);
+}
+
+.my_ticket-container {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 100px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.my_ticket-header {
+    height: 60px;
+    padding: 20px;
+}
+
+.my_main-ticket {
+    border-radius: 15px;
+}
+
+.my_padding-x {
+    padding: 0 20px;
+}
+
+.my_smaller-title {
+    width: 60%;
+}
+
+.my_welcome-bg {
+    background-image: url(../img/31144.jpg);
+    background-color: white;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    border-radius: 0 0 30px 30px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.my_card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.my_circle-start {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.my_line {
+    width: 100px;
+    height: 1px;
+    border: 2px dashed #cfd0d3;
+}
+
+.my_h5 {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.my_kilometers-text {
+    font-size: .8rem;
+    color: #cfd0d3;
+}
+
+.my_solid-border-bt {
+    border-bottom: 1px solid #e6e7ea;
+}
+
+.my_color-dk-grey {
+    color: #596472;
+}
+
+.my_color-orange {
+    color: #f16b52;
+}
+
+.my_bg-color-grey {
+    background-color: #f0eff6;
+}
+
+.my_bg-color-dk-grey {
+    color: #596472;
+}
+
+.my_bg-color-orange {
+    background-color: #f16b52;
+}

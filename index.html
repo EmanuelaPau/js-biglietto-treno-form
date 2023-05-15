@@ -21,32 +21,91 @@
 
     <body>
         <main>
-            <div>
-                <label for="kilometers">Add here the number of kilometers your train trip will be</label>
-                <input type="text" name="kilometers" id="kilometers">
-            </div>
-            <div>
-                <label for="kilometers">Add here your age</label>
-                <input type="number" name="age" id="age">
-            </div>
-            <div>
-                <button class="submit-button" id="my_submit-button">
-                    submit
-                </button>
-            </div>
+            <header></header>
+            <div class="my_ticket-container w-100 h-100">
+                <!-- Header -->
+                <div class="my_ticket-header d-flex align-items-center justify-content-between mb-3">
+                    <div><a class="my_color-orange" href=""><i class="fa-solid fa-chevron-left"></i></a></div>
+                    <h3 class="text-center">Boarding Pass Generator</h3>
+                    <div><a class="my_color-orange" href=""><i class="fa-solid fa-chevron-right"></i></a></div>
+                </div>
 
-            <div>
-                <span>Il numero di chilometri del tuo viaggio sono:</span> <span id="kilometers-message" > </span>
+                <!-- Input section  -->
+
+                <div class="my_bg-color-grey my_main-ticket">
+                    <div class="my_welcome-bg">
+                        <div class="my_padding-x">
+                            <h5 class="my_h5 my_color-dk-grey">Welcome! 🔥</h5>
+                            <h2 class="fw-bolder my_smaller-title">Where will you go today?</h2>
+                        </div>
+                    </div>
+                    
+                    <div class="my_padding-x">
+                        <div class="my_card mb-3">
+                            <div class="form-group">
+                                <label for="kilometers">Add here the number of kilometers your train trip will be</label>
+                                <input type="text" name="kilometers" class="form-control mb-3" id="kilometers" placeholder="Trip length">
+                                <!-- <small id="emailHelp" class="form-text text-muted">Remember to write in numbers.</small> -->
+                            </div>
+
+                            <div class="form-group">
+                                <label for="kilometers">Add here your age</label>
+                                <input type="number" name="age" class="form-control mb-3" id="age" placeholder="Age">
+                            </div>
+
+                            <button type="button" class="btn btn-primary submit-button" id="my_submit-button" >Submit</button>
+
+                        </div>
+
+                        <div class="my_card mb-4">
+                            <!-- <div class="my_ticket-circle"></div>
+                            <div class="my_ticket-circle"></div> -->
+                            <div class="d-flex justify-content-between mb-3 ">
+                                <div class="badge rounded-pill bg-primary d-flex align-items-center">
+                                    <span>Age: </span> <span  id="age-message"></span>
+                                </div>
+                                <div class="badge rounded-pill bg-primary d-flex align-items-center">
+                                    <span>Discount: </span> <span  id="discount-percentage"></span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center my_solid-border-bt mb-3">
+                                <div class="my_dashed-border-bt">
+                                    <p class="my_color-dk-grey mb-1">15 Mag, Mon</p>
+                                    <h2>
+                                        08:58
+                                    </h2>
+                                </div>
+                                <div class="d-flex flex-column justify-content-center">
+                                    <div class="d-flex flex-row justify-content-center"><p class="my_kilometers-text mb-0" id="my_kilometers"></p><span class="my_kilometers-text" >km</span></div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="my_circle-start my_bg-color-orange"></div>
+                                        <div class="my_line"></div>
+                                        <div class="my_circle-start my_bg-color-orange"></div>
+                                    
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="my_color-dk-grey mb-1">15 Mag, Mon</p>
+                                    <h2>
+                                        13:40
+                                    </h2>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div>
+                                    <h1 class="d-inline fw-bolder" id="price-message">Price</h1>
+                                    <h1 class="d-inline fw-bolder" id="discount-message">D-price</h1>
+                                    <h1 class="d-inline">&euro;</h1>
+                                </div>
+                            </div>
+
+                        </div> 
+                    </div>
+                    
+                </div>
             </div>
-            <div>
-                <span>La tua età è:</span> <span id="age-message" > </span>
-            </div>
-            <div>
-                <span>Il prezzo del tuo biglietto è:</span> <span id="price-message" > </span>
-            </div>
-            <div>
-                <span>Il prezzo scontato del tuo biglietto è:</span> <span id="discount-message" > </span>
-            </div> 
         </main>
     </body>
     <script type="text/javascript" src="script/my_script.js"></script>
