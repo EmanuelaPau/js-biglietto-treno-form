@@ -61,6 +61,7 @@ submitButton.addEventListener('click', function () {
         document.getElementById("discount-percentage").innerHTML = " 19,4%";
 
         discountBadge.classList.remove("bg-primary");
+        discountBadge.classList.remove("my_bg-color-green");
         discountBadge.classList.add("my_bg-color-orange");
 
         myPriceTxt.classList.add("text-decoration-line-through");
@@ -73,12 +74,26 @@ submitButton.addEventListener('click', function () {
         document.getElementById("discount-percentage").innerHTML = " 37,7%";
 
         discountBadge.classList.remove("bg-primary");
+        discountBadge.classList.remove("my_bg-color-orange");
         discountBadge.classList.add("my_bg-color-green");
 
         myPriceTxt.classList.add("text-decoration-line-through");
         myPriceTxt.classList.add("my_color-grey");
 
         myDiscountTxt.classList.remove("d-none");
+    }
+
+    else {
+        document.getElementById("discount-percentage").innerHTML = " None";
+
+        discountBadge.classList.remove("my_bg-color-green");
+        discountBadge.classList.remove("my_bg-color-orange");
+        discountBadge.classList.add("bg-primary");
+
+        myPriceTxt.classList.remove("text-decoration-line-through");
+        myPriceTxt.classList.remove("my_color-grey");
+
+        myDiscountTxt.classList.add("d-none")
     }
 
     // document.getElementById("kilometers-message").innerHTML = kilometers;
