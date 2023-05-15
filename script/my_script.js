@@ -13,9 +13,13 @@ console.log(kilometers);
 let age = document.getElementById("age");
 console.log(age);
 
+// Add discount variable 
 let discountedTicket;
+
 // Add button
 let subimitButton = document.getElementById("my_subimit-button")
+
+// Add button click behavior 
 subimitButton.addEventListener('click', function () {
     kilometers = parseInt(kilometers.value);
     console.log("questi sono i chilometri che percorri:" + kilometers);
