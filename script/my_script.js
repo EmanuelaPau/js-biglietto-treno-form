@@ -49,8 +49,8 @@ submitButton.addEventListener('click', function () {
     console.log("questo è il prezzo del tuo biglietto scontato: " + ticketPrice);
 
     document.getElementById("kilometers-message").innerHTML = kilometers;
-    document.getElementById("age-message").innerHTML += age;
-    document.getElementById("discount-message").innerHTML += ticketPrice;
+    document.getElementById("age-message").innerHTML = age;
+    document.getElementById("discount-message").innerHTML = ticketPrice;
 }
 )
 
